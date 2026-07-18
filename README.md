@@ -26,6 +26,10 @@ Accepted for presentation at an academic conference.
 - **Real-Time Dashboard** — live simulation with trend charts and confidence gauges
 - **FastAPI Backend** — 6 REST endpoints for external integration
 
+## 📊 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
 ---
 
 ## Technology Stack
@@ -39,33 +43,45 @@ Accepted for presentation at an academic conference.
 | Data Processing  | pandas, numpy, joblib               |
 
 ---
+## System Architecture
+
+![System Architecture](screenshots/system-architecture.png)
 
 ## Project Structure
 
 ```
-emergency_ai_dss/
+AI-Driven-Emergency-Response-Assistant/
 │
-├── trip_time_simulation.py      
-├── traffic_simulation.py      
-├── weather_simulation.py     
-├── delay_simulation.py      
-├── delay_cause_model.py         
-├── availability_model.py         
-├── eta_adjustment.py            
-├── data_validation.py           
-├── final_simulated_emergency_data.csv
-├── run_project.py             
-│
+├──  .gitignore
+│── availability_model.py
+│── data_validation.py
+│── delay_cause_model.py
+│── delay_simulation.py
+│── eta_adjustment.py
+│── final_simulated_emergency_data.csv
+│── README.md
+│── run_project.py
+│── test_eta_adjustment.py
+│── traffic_simulation.py
+│── trip_time_simulation.py
+│── weather_simulation.py       
 └── backend/
-    ├── dashboard.py              ← Streamlit dashboard
-    ├── main.py                   ← FastAPI app
-    ├── models.py                 ← Pydantic schemas
-    ├── eta_adjustment.py
-    ├── requirements.txt
-    └── README.md
+|   ├── dashboard.py              ← Streamlit dashboard
+|   ├── main.py                   ← FastAPI app
+|   ├── models.py                 ← Pydantic schemas
+|   ├── eta_adjustment.py
+|   ├── requirements.txt
+|   └── README.md
+└── screenshots/
+     ├── dashboard.png
+     ├── random forest regressor.png
+     ├── system architecture.png
+     ├── workflow.png
 ```
 
----
+## Workflow
+
+![Workflow](screenshots/workflow.png)
 
 ## Setup and Execution Guide
 
@@ -88,6 +104,10 @@ python delay_simulation.py
 ```bash
 python delay_cause_model.py
 ```
+
+## Random-forest-classifier
+
+![Random-forest-classifier](screenshots/Random-forest-classifier.png)
 
 ### Step 4: Train Availability Predictor
 *Generates 4 .pkl files*
