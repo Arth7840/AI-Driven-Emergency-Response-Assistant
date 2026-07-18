@@ -105,9 +105,9 @@ python delay_simulation.py
 python delay_cause_model.py
 ```
 
-## Random-forest-classifier
+## Random-forest-regressor
 
-![Random-forest-classifier](screenshots/Random-forest-classifier.png)
+![Random-forest-regressor](screenshots/random-forest-regressor.png)
 
 ### Step 4: Train Availability Predictor
 *Generates 4 .pkl files*
