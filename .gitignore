@@ -14,10 +14,6 @@ __pycache__/
 *.csv
 *.xlsx
 
-# Plots / outputs
-*.png
-*.jpg
-
 # OS files
 .DS_Store
 Thumbs.db
